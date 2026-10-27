@@ -1,0 +1,35 @@
+using System;
+					
+public class Program
+{
+	public static void Main(){
+	String nome;
+	double peso;
+	double altura;
+	double imc;
+	 
+    Console.WriteLine("SEU NOME É");
+	nome = Console.ReadLine();
+	Console.WriteLine("INSIRA SEU PESO");
+	peso = Convert.ToDouble(Console.ReadLine());
+	Console.WriteLine("INSIRA SUA ALTURA");
+	altura = Convert.ToDouble(Console.ReadLine());
+	imc = peso/(altura*altura);
+	 
+	
+		 if ( imc < 18.5 ){
+			Console.WriteLine("SEU PESO É BAIXO");
+			} 
+		
+		else if (imc >= 18 & 24.99 <= imc){
+			Console.WriteLine("SEU PESO É NORMAL");
+		}
+		else if ( imc >= 25 & 29.9 <= imc ){ 
+			Console.WriteLine("SEU PESO É SOBREPESO");
+			} 
+ 	   else{
+			Console.WriteLine("ESTA OBESO"); 
+		}
+	}
+}
+
